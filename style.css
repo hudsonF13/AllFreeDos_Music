@@ -1,0 +1,103 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    font-size: unset;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, rgb(180, 41, 41), rgb(187, 129, 22));
+    border: 3px solid rgb(78, 74, 74);
+    padding: 15px 0px 15px 0px;
+    width: 320px;
+    height: 550px;
+}
+
+.title { 
+    padding: 10px 0px 20px 0px;
+    font-weight: 575;
+}
+
+.medMenu {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+}
+
+.progressBar {
+    background-color: rgb(83, 77, 77);
+    border-radius: 30px;
+    height: 3px;
+    width: 230px;
+    cursor: pointer;
+}
+
+.currentBar {
+    --progress: 0%;
+    /*esse dois tracinhos indicam que a propriedade é variável,
+    nesse caso, a barra de progresso vai ser atualizada no JS mas será
+    renderizada no CSS*/
+    background-color: white;
+    border-radius: inherit;
+    height: inherit;
+    width: var(--progress);
+    /*a "VAR" permite que nos usemos a variável criada acima*/
+    cursor: pointer;
+}
+
+#timeBox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    width: 72%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.band {
+    display: flex;
+    justify-content: center;
+    color: rgb(172, 156, 156); 
+    font-weight: 600;
+    width: 300px;
+    height: 30px;
+}
+
+.play {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    padding: 5px 0px 5px 0px;
+}
+
+.botton {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.bar {
+    padding: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.buttonActive {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 1px black;
+}
